@@ -1,10 +1,19 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+ <head>
+    <css src="css/header_banner.css"/>
+</head>
     <body>
+    <referenceContainer name="header.container">
+    <container name="header.banner.container" as="header_banner_container" htmlTag="div" htmlClass="header-banner-container" before="-">
+        <block class="Magento\Framework\View\Element\Template" name="header.banner.block" template="Magento_Theme::html/header_banner.phtml"/>
+    </container>
+</referenceContainer>
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_file" xsi:type="string">images/logo.svg</argument>
                 <argument name="logo_alt" xsi:type="string">Scandiweb Logo</argument>
             </arguments>
         </referenceBlock>
+        
     </body>
 </page>
