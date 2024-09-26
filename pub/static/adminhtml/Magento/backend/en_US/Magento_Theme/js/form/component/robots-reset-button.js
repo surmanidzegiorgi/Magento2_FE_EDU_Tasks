@@ -1,0 +1,1 @@
+/home/giorgisurma/Devs/my-app/vendor/magento/module-theme/view/adminhtml/web/js/form/component/robots-reset-button.js
